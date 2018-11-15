@@ -1,0 +1,262 @@
+.navbar-toggle /* Styles the main menu button */ 
+{
+    display:block;
+    border:none;
+    float:right;
+    padding:5px;
+    background-color: transparent;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+#popout
+{
+    position:fixed;
+    right:calc(-62%);
+    background-color: #000;
+    padding:20px;
+    height:100%;
+    z-index:99999 !important;
+    top:0;
+    width:40%;
+    font-family:'Museo-sans',arial,sans-serif !important;
+    z-index:2;
+}
+#popout ul
+{
+    list-style-type:none;
+    padding-left:0;
+}
+#popout #cssmenu
+{
+	z-index:20;
+}
+#popout:after
+{
+	content: attr(data-menu-title);
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+writing-mode: lr-tb;
+display:inline-block;
+position:absolute;
+right:-169px;
+top:50%;
+font-size:14px;
+font-family:'Museo Sans',arial, sans-serif;
+letter-spacing: 6px;
+text-transform:uppercase;
+color:#2b2b2b;
+
+}
+#popout ul li
+{
+	width:67%;
+	margin-left:4px;
+
+}
+#popout ul li.navbar-toggle
+{
+	display:none;
+}
+#popout ul li a
+{
+    padding:5px;
+    display:block;
+    color: #fff;
+    font-size:18px;
+    text-align:right;
+    margin-bottom:10px;
+    font-family:'Museo-Sans',sans-serif;
+	padding-right:0;
+	line-height:2vh;
+}
+#popout ul ul
+{
+	
+	  position:absolute;
+	  float: none;
+    right: 0;
+    width:33%;
+
+	margin-top:-35px;
+    
+}
+#popout ul li:hover ul,#popout ul li:active ul
+{
+	display:block;
+
+}
+#popout ul ul li a
+{
+	padding:0;
+	text-align:left;
+	margin-bottom:0;
+			font-size:80%;
+ 		color:#ccc;
+}
+#popout ul ul li a:before
+{
+	content:"- ";
+	float:left;
+	font-weight:300;
+	padding-right:5px;
+}
+#popout ul li a:hover
+{
+	color:#c8a683;
+	text-decoration:none;
+}
+#popout ul ul:after
+{
+	content:"";
+}
+#popout ul ul li.navbar-toggle
+{
+	display:none;
+}
+.top-section
+{
+    display:none;
+}
+.fa::before {
+float: left;
+margin-top: 8px;
+width: 30px;
+}
+
+#popout .fa
+{
+    color: #fff;
+    padding-right:5px;
+}
+#popout .fa:before
+{
+    display:block;
+
+    
+}
+
+.navbar-header
+{
+    width:100%;
+}
+.navbar-close
+{
+    width:100%;
+    background-color:transparent;
+    padding:15px;
+    border:none;
+    color: #fff;
+    text-align:right;
+    padding-top:35px;
+    font-weight:300;
+    outline:0 !important;
+    cursor:pointer;
+    text-transform:uppercase;
+    z-index:9999;
+    pointer:cursor;
+    padding-top:0.5vh;
+}
+.navbar-close i	
+{
+	margin-top:10px;
+}
+
+/* 
+	
+	animation stuff
+	
+*/
+/* NEW styling */
+
+
+ .sub-menu li {
+     -webkit-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: perspective(350px) rotateX(-90deg);
+  -o-transform: perspective(350px) rotateX(-90deg);
+  transform: perspective(350px) rotateX(-90deg);
+ }
+
+.sub-menu li:nth-child(1) { 
+  -webkit-transition:0.2s linear 0.2s;
+  -o-transition:0.2s linear 0.2s;
+  transition:0.2s linear 0.2s;
+}
+.sub-menu li:nth-child(2) {
+  -webkit-transition: 0.2s linear 0s;
+  -o-transition: 0.2s linear 0s;
+  transition: 0.2s linear 0s;
+}
+
+.menu-item-has-children:hover .sub-menu li {
+    -webkit-transform: perspective(350px) rotateX(0deg);
+  -o-transform: perspective(350px) rotateX(0deg);
+  transform: perspective(350px) rotateX(0deg);
+  -webkit-transition:0.1s linear 0s;
+  -o-transition:0.1s linear 0s;
+  transition:0.1s linear 0s;
+}
+
+.menu-item-has-children:hover li:nth-child(2) {
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+#popout .socialicons
+{
+	width:67%;
+	display:inline-block;
+	text-align:right;
+position:absolute;
+left:0;
+bottom:50px;
+}
+
+#popout .socialicons a
+{
+	color:#2b2b2b;
+	padding:20px;
+	text-align:center;
+	display:inline-block;
+	background-color:#363636;
+	font-size:21px;
+}
+@media all and (max-width:1450px)
+{
+	#popout .socialicons
+	{
+		width:37%;
+	}
+	#popout .socialicons a
+	{
+		font-size:18px;
+		padding:10px;
+	}
+}
+#popout .socialicons a:hover{
+	background-color:#000;
+}
+#popout .socialicons a .fa
+{
+	color:#2b2b2b;
+}
+#popout .socialicons a:hover .fa
+{
+	
+	color:#fff;
+	text-decoration:none;
+	
+}
+div#popout .border {
+    display: block;
+    width: 33%;
+    border-left: 1px solid #363636;
+    height: 100%;
+    position: absolute;
+    z-index:-1;
+    right:0
+    
+}
