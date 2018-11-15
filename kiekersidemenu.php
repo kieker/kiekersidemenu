@@ -1,15 +1,15 @@
 <?php
 /**
 * Plugin Name: Kieker Side menu
-* Plugin URI: http://dieselbrook.co.za
+* Plugin URI: http://kiekerweb.co.za
 * Description: This plugin adds a side menu that is toggled by a icon on the main menu.
 * Version: 1.0.0
 * Author: John-henry Ross
-* Author URI: http://dieselbrook.co.za
+* Author URI: http://kiekerweb.co.za
 * License: GPL2
 */
 
-defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+defined( 'ABSPATH' ) or die( 'No scripts please!' );
 
 if (is_admin())
 {
